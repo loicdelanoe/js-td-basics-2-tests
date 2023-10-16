@@ -104,11 +104,31 @@ Ecrivez un programme qui dit "Bonjour" à l'utilisateur et n'accepte de lui rép
 2. Calculez leur BMI et affichez, selon le cas, "Le BMI de Mark est plus élevé que celui de John" ou "Le BMI de John est plus élevé que celui de Mark"
 */
 
-
+// const tailleJohn = 1.69;
+// const poidsJohn = 78;
+//
+// const tailleMark = 1.95;
+// const poidsMark = 98;
+//
+// const bmiJohn = poidsJohn / tailleJohn^2;
+// const bmiMark = poidsMark / tailleMark^2;
+//
+// if (bmiJohn < bmiMark) {
+//     console.log("Le BMI de Mark est plus élevé que celui de John");
+// } else {
+//     console.log("Le BMI de John est plus élevé que celui de Mark");
+// }
 
 /*
 Ecrire un programme qui teste si un nombre entré par l’utilisateur est pair ou impair.
 */
 
+const number = Number(prompt("Entrez un nombre :"));
+
+if (number % 2 === 0) {
+    console.log("Le nombre est pair");
+} else {
+    console.log("Le nombre est impair");
+}
 
 
