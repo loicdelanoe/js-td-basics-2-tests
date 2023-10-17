@@ -6,8 +6,8 @@
 Initalisez la variable firstName à John et la variable age à 14
 */
 
-var firstName = 'John';
-var age = 14;
+const firstName = 'John';
+const age = 14;
 
 // 16 - 1. L'opérateur ternaire
 
@@ -17,7 +17,7 @@ var age = 14;
 2. Testez en changeant l'âge de John (14 ans, 24 ans)
 */
 
-
+// age > 18 ? console.log("John boit des bières") : console.log("John boit des jus");
 
 /*
 MEILLEURE PRATIQUE : utiliser l'expression ternaire pour affecter une valeur ou une autre valeur à une variable selon qu'une condition est remplie ou pas
@@ -25,11 +25,17 @@ MEILLEURE PRATIQUE : utiliser l'expression ternaire pour affecter une valeur ou 
 2. Afficher "John boit des …" (l'affichage s'adapte à l'âge de John, tester différents cas)
 */
 
+const drink = age > 18 ? "bières" : "jus";
 
+console.log(`John boit des ${drink}`);
 
 /* Faites la même chose en utilisant un if / else */
 
-
+// if (age > 18) {
+//     console.log("John boit des bières");
+// } else {
+//     console.log("John boit des jus");
+// }
 
 
 // 16 - 2. L'instruction Switch
@@ -46,7 +52,23 @@ MEILLEURE PRATIQUE : utiliser l'expression ternaire pour affecter une valeur ou 
 3. Testez les différents cas de figure en changeant la profession de John
 */
 
-
+// const job = "instituteur";
+//
+// switch (job) {
+//     case "professeur":
+//     case "instituteur":
+//         console.log("John enseigne la programmation aux enfants");
+//         break;
+//     case "chauffeur":
+//         console.log("John conduit un taxi à Lisbonne");
+//         break;
+//     case "designer":
+//         console.log("John conçoit de beaux sites web");
+//         break;
+//     default:
+//         console.log("John fait autre chose");
+//         break;
+// }
 
 /* 
 1. John a vielli : il a à présent 56 ans…
