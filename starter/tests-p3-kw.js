@@ -8,6 +8,26 @@ Les 51 à 70èmes KW sont à 15 centimes le KW
 Les KW suivants sont à 10 centimes le KW
 */
 
+const consoKw = 80;
+let coutTotal;
+
+const tarif1 = 0.25;
+const tarif2 = 0.20;
+const tarif3 = 0.15;
+const tarif4 = 0.10;
+
+if (consoKw <= 30) {
+    coutTotal = consoKw * 0.25;
+} else if (consoKw >= 31 && consoKw <= 50) {
+    coutTotal = (30 * tarif1) + ((consoKw - 30) * tarif2);
+} else if (consoKw >= 51 && consoKw <= 70) {
+    coutTotal = (30 * tarif1) + (20 * tarif2) + ((consoKw - 50) * tarif3);
+} else {
+    coutTotal = (30 * tarif1) + (20 * tarif2) + (20 * tarif3) + ((consoKw - 70) * tarif4);
+}
+
+console.log(`Votre consommation est de ${coutTotal}€`);
+
 /*
 Valeurs de test :
 - 30 KW => 750 centimes = 7.5 €
